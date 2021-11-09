@@ -1,0 +1,27 @@
+header{
+    overflow: hidden;
+    background-color: rgb(227, 243, 253);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+.logo {
+    height: auto;
+    width: 200px;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+a {
+    float: left;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+div.navbar{
+    padding-top: 15px;
+}
