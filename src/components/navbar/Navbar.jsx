@@ -1,5 +1,6 @@
 import './Navbar.css'
 import logo from './logo.png'
+import Cartwidget from '../CartWidget/CartWidget.jsx'
 
 const Navbar = () => {
     return(
@@ -11,6 +12,7 @@ const Navbar = () => {
                     <a href="#about">About us</a>
                     <a href="#contact">Contact</a>
                 </div>
+            <Cartwidget />
         </header>
     )
 }
