@@ -5,7 +5,7 @@ import Cartwidget from '../CartWidget/CartWidget.jsx'
 const Navbar = () => {
     return(
         <header>
-            <a href="#home"> <img src={logo} alt='' class="logo" /></a>
+            <a href="#home"> <img src={logo} alt='' className="logo" /></a>
                 <div className="navbar">
                     <a href="#home">Home</a>
                     <a href="#products">Products</a>
