@@ -8,7 +8,7 @@ function App() {
   return (
     <Fragment>
       <Navbar />
-      <ItemListContainer greeting='Buenas!'/>
+        <ItemListContainer greeting='Buenas!'/>
     </Fragment>
   );
 }
