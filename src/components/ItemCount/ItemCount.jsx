@@ -4,11 +4,15 @@ function ItemCount() {
 
 const [number, setNumber] = useState(0)
 
-const incrementar = () => {
+const stock = 10 // lo hardcodeo, porque no tengo el stock todavia//
+
+const onAdd = () => {
+    if (number < stock){
     setNumber(number + 1)
+    }
 }
 
-const disminuir = () => {
+const onTake = () => {
     if (number > 0){
         setNumber(number - 1)
     }
@@ -17,8 +21,8 @@ const disminuir = () => {
 return(
     <Fragment>
         <h1>{`tiene ${number} en el carrito`}</h1>
-        <button onClick={incrementar}> + </button>
-        <button onClick={disminuir}> - </button>
+        <button onClick={onAdd}> + </button>
+        <button onClick={onTake}> - </button>
     </Fragment>
 )
 
