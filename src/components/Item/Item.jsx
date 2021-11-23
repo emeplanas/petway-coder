@@ -1,18 +1,27 @@
 export const Products = [
     {
-    name: 'Dog Chow',
-    animal: 'perro',
+    name: 'Petway Chico',
+    price: '$1000',
+    img:'',
     id: '1',
     },
     {
-    name: 'Kitten',
-    animal: 'gato',
+    name: 'Petway Mediano',
+    price: '$1200',
+    img:'',
     id: '2',
     },
     {
-    name: 'Cat chow',
-    animal: 'gato',
+    name: 'Rascador',
+    price: '$650',
+    img:'',
     id: '3',
     },
+    {
+    name: 'Mordisco',
+    price: '$550',        
+    img:'',
+    id: '4',   
+    }
 ]
 
