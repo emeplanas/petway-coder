@@ -7,9 +7,12 @@ import Petwayiso from './Asset 1.png'
 const ItemListContainer = (props) => {
     return(
         <Fragment>
-        <h1 className="greeting"><img className="isologo" src={Petwayiso} alt="<3"/> <div> {props.greeting} </div> </h1>
-        <ItemCount />
-        <ItemList />
+            <div>
+                <h1 className="greeting"><img className="isologo" src={Petwayiso} alt="<3"/> <div> {props.greeting} </div> </h1>
+            </div>
+            <div className="Products">
+                <ItemList  />
+            </div>
         </Fragment>
     )
 }

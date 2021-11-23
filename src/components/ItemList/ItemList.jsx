@@ -1,5 +1,7 @@
 import {Products} from '../Item/Item.jsx'
 import {Fragment} from 'react/cjs/react.production.min'
+import ItemCount from '../ItemCount/ItemCount.jsx'
+import './ItemList.css'
 
 function ItemList(){
     return(
@@ -8,8 +10,10 @@ function ItemList(){
             Products.map((product,index) => {
                 return(
                     <div key={index}>
-                        <h1>{product.name}</h1>
-                        <p>{product.animal}</p>
+                        <h1 className="Product">{product.name}</h1>
+                        <img src={product.img} alt='' />
+                        <p className="Price">{product.price}</p>
+                        <ItemCount productstock={product.stock} />
                     </div>
                 )
             })

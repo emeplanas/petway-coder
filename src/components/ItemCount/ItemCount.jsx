@@ -1,13 +1,12 @@
 import { Fragment, useState } from "react";
+import './itemcount.css'
 
-function ItemCount() {
+function ItemCount(props) {
 
 const [number, setNumber] = useState(0)
 
-const stock = 10 // lo hardcodeo, porque no tengo el stock todavia//
-
 const onAdd = () => {
-    if (number < stock){
+    if (number < props.productstock){
     setNumber(number + 1)
     }
 }
@@ -20,7 +19,7 @@ const onTake = () => {
 
 return(
     <Fragment>
-        <h1>{`tiene ${number} en el carrito`}</h1>
+        <h1 className="Cart">{`tiene`} {number} {`en el carrito`}</h1>
         <button onClick={onAdd}> + </button>
         <button onClick={onTake}> - </button>
     </Fragment>
