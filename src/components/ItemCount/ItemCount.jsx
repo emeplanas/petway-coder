@@ -22,6 +22,9 @@ return(
         <h1 className="Cart">{`tiene`} {number} {`en el carrito`}</h1>
         <button onClick={onAdd}> + </button>
         <button onClick={onTake}> - </button>
+        <div className="AddCart">
+            <button onClick={()=>onAdd(number)} >Add to cart </button>
+        </div>
     </Fragment>
 )
 
